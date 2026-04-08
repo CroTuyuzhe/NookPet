@@ -1,8 +1,137 @@
 # NookPet
 桌面陪伴精灵，一款不打扰工作的伙伴，在电脑桌面上和它一起挂机成长、孵化收集、惊喜养成吧
 
-<div style="margin: 20px 0;">
-  <a href="https://github.com/CroTuyuzhe/NookPet/releases/download/v1.0/NookPet_v1.0.dmg" style="display: inline-block; background-color: #0071e3; color: white; padding: 14px 28px; border-radius: 12px; font-size: 16px; font-weight: bold; text-decoration: none;">
-    ⬇️ 下载 macOS 安装包
+- 应用包体积：6.78MB
+- 支持Mac（Intel、M芯片兼容）
+
+<p align="center">
+  <a href="https://github.com/CroTuyuzhe/NookPet/releases/download/v1.0/NookPet_v1.0.dmg">
+    <img 
+      src="https://img.shields.io/badge/📥%20%E4%B8%8B%E8%BD%BD-macOS%20DMG%20%E5%AE%89%E8%A3%85%E5%8C%85-blue?style=for-the-badge&logo=apple&logoColor=white&labelColor=000000&color=2997FF"
+      style="height: 50px;"
+    >
   </a>
-</div>
+  <br><br>
+  <strong style="color:#ff3b30; font-size:16px;">
+    ⚠️ <a href="#install">首次打开提示“无法验证开发者” → 系统设置“隐私与安全性“ → 选择“仍要打开”即可</a>
+  </strong>
+</p>
+
+<p align="center">
+  <img width="250" height="250" alt="1775629780491" src="https://github.com/user-attachments/assets/a5a2a25e-b06a-499f-92c8-6ba843a8ea08" />
+</p>
+
+## ✨ 产品简介
+
+NookPet（角落精灵）是一个有成长反馈的 **桌面陪伴系统**，核心关键词：**陪伴感 · 低打扰 · 成长反馈 · 随机惊喜**。
+
+精灵常驻桌面，不影响你正常办公、娱乐。挂机即可获得经验，升级掉落精灵蛋，孵化获得新精灵——全程无需高频操作，主打「轻量化陪伴」与「碎片化养成」。
+
+### 核心循环
+
+```
+🐣 桌面精灵 → ⏱ 挂机 → ⭐ 获得经验 → 🆙 升级 → 🎁 掉落 → 🥚 孵化 → 🐾 新精灵 → 🔄 循环
+```
+
+<img src="https://github.com/user-attachments/assets/5d821bb4-cae7-4712-b826-13e534bbb1f6" width="40%">
+
+---
+
+## 🎮 功能特性
+
+### 🐾 桌面精灵
+- 100×100px 精灵常驻桌面，置顶显示，不抢焦点
+- 循环待机动画 + 随机动作（跳跃、睡觉、旋转、开心）
+- 支持鼠标拖动，拖动时散发 ✨ 星光粒子特效
+- 拖动后可吸附桌面边缘
+
+<img src="https://github.com/user-attachments/assets/685d3bf4-f799-44be-9c19-fbd895d217f3" width="40%">
+
+### 💬 气泡互动系统
+- 每 10–90 秒随机弹出温馨气泡（挂机提示、情绪表达、行为引导）
+- 精灵升级、道具掉落、孵化完成时强制弹出通知气泡
+- 气泡弹出/消失动效 0.3s，流畅柔和
+
+### 📅 每日问候
+- 每天首次启动自动弹出日期信息（公历 + 农历）
+- 支持节假日识别（春节、中秋、国庆等）+ 节气提醒
+- 分时段问候语 + 随机每日一言
+
+### 🥚 掉落 & 孵化
+- 升级必掉经验果，80% 概率掉落精灵蛋
+- 4 种蛋类型：初级蛋 / 中级蛋 / 高级蛋 / 大师蛋
+- 孵化时间 5 分钟 ~ 2 小时，支持后台异步孵化
+- 孵化期间关闭游戏/电脑睡眠，进度不丢失
+
+### 🎲 稀有度系统
+- **N（普通）** 60% · **R（稀有）** 25% · **SR** 10% · **SSR** 5%
+- 不同蛋类型有 SSR 概率加权（大师蛋 SSR 率 20%）
+- 
+<img src="https://github.com/user-attachments/assets/b9895039-08c5-4710-a1f5-f46c8841adde" width="50%">
+
+### 💝 好感度系统
+- 喂食贪吃果提升好感度（0–100）
+- 好感度满 100 时解锁自定义昵称（上限 10 字）
+- 不同精灵有好感度喂养加成
+
+### 🎒 背包系统
+- **精灵背包**：查看已解锁精灵，一键切换出场精灵，支持放生
+- **道具背包**：经验果（+10XP）、超级经验果（+50XP）、贪吃果（+好感度）、精灵蛋
+- 道具堆叠显示，操作简洁
+
+### 🔐 存档系统
+- 本地自动保存（UserDefaults）
+- 支持导出/导入存档文件
+
+### 🎫 兑换码系统
+- 支持输入兑换码获取特殊奖励
+- 新手兑换码：“happyday”
+
+---
+
+## 🖥 交互设计
+
+### 双入口设计
+
+#### 🖱 入口1：桌面精灵（主入口）
+| 操作 | 功能 |
+|------|------|
+| **单击** | 打开快捷面板（Popover）：等级进度条、挂机时长、快捷按钮 |
+| **双击** | 打开主窗口（完整操作界面） |
+| **右键** | 弹出菜单：背包、孵化、更换、隐藏、退出 |
+
+#### 🧩 入口2：macOS 状态栏（辅助入口）
+- 显示当前精灵信息（名称 + 等级）
+- 操作选项：查看状态、打开背包、孵化、设置、退出
+- 找不到桌面精灵时可通过状态栏恢复
+
+### 窗口体系
+| 窗口 | 说明 |
+|------|------|
+| **主窗口** | Tab 结构：精灵 / 背包 / 孵化 / 设置 |
+| **桌面精灵窗口** | 常驻桌面，Always-on-top，不抢焦点 |
+| **快捷面板** | 轻量 Popover，点击外部自动关闭 |
+
+---
+
+<span id="install"></span>
+## 📥 安装方法（macOS）
+1. 下载安装包 `NookPet-v1.0.dmg`
+2. 打开 DMG，将 `NookPet.app` 拖入 `Applications`
+3. 首次打开提示「无法验证开发者」：
+   - **电脑左上角打开系统设置 → 找到** 隐私与安全性
+   - **隐私与安全性拉到最下面 → 找到** 已阻止“NookPet”以保护Mac
+   - **点击“仍要打开”**
+
+<img src="https://github.com/user-attachments/assets/b1ba5bff-a016-4aea-b1d0-70cb50249b6c" width="40%">
+
+
+---
+
+## 💡 系统要求
+- macOS 12.0 Monterey 及以上
+- 架构：x86_64（Intel）, M系列芯片通过Rosetta兼容
+- 内存要求：（～30MB）
+- 磁盘： ～10MB
+- 网络：不需要
+
